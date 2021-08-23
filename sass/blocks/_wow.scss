@@ -1,0 +1,6 @@
+.wow_green {
+  color: #3fe80c;
+  &:hover {
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+  }
+}
