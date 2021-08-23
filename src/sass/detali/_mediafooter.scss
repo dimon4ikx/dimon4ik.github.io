@@ -1,0 +1,107 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    .footers {
+      &__title {
+        padding-top: 7px;
+        padding-left: 0px;
+        grid-template: repeat(1, 20px) / repeat(5, 135px);
+        column-gap: 16px;
+        justify-content: center;
+        align-items: center;
+        :nth-child(5n) {
+          @include before_circle;
+          &:before {
+            width: 0;
+            height: 0;
+          }
+        }
+      }
+      &__items {
+        @include before_circle;
+        &:before {
+          position: absolute;
+          left: 141px;
+          top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+    .footers {
+      &__title {
+        padding-top: 11px;
+        padding-left: 0px;
+        justify-content: center;
+        align-items: center;
+        grid-template: repeat(1, 20px) / repeat(5, 132px);
+        column-gap: 7px;
+      }
+      &__items {
+        @include before_circle;
+        &:before {
+          position: absolute;
+          left: 133.5px;
+          top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+    .footers {
+      &__title {
+        grid-template: repeat(2, 20px) / repeat(5, 98px);
+        justify-content: center;
+        align-items: center;
+        column-gap: 5px;
+      }
+      &__items {
+        &-descr {
+          font-size: 10px;
+        }
+        @include before_circle;
+        &:before {
+          position: absolute;
+          left: 98px;
+          top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 320px;
+    .footers {
+      &__title {
+        padding-top: 2px;
+        min-height: 40px;
+        grid-template: repeat(2, 15px) / repeat(5, 45px);
+        column-gap: 10px;
+        row-gap: 5px;
+      }
+      &__items {
+        &-descr {
+          font-size: 9px;
+        }
+        @include before_circle;
+        &:before {
+          position: absolute;
+          left: 49px;
+          top: 5px;
+          width: 3px;
+          height: 3px;
+        }
+      }
+    }
+  }
+}

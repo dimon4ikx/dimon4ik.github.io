@@ -1,0 +1,95 @@
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    hr {
+      color: #bfbbb7;
+      background-color: #bfbbb7;
+      height: 3px;
+      border-radius: 10px;
+      width: 680px;
+    }
+
+    .animation {
+      &__wrapper {
+        padding-top: 40px;
+        margin-bottom: 0px;
+        padding-left: 150px;
+        grid-template: repeat(1, 300px) / repeat(2, 300px);
+        column-gap: 50px;
+
+        img {
+          height: 300px;
+        }
+        &-descr {
+          font-size: 46px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+
+    .animation {
+      &__wrapper {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+    hr {
+      color: #bfbbb7;
+      background-color: #bfbbb7;
+      height: 3px;
+      border-radius: 10px;
+      width: 480px;
+    }
+
+    .animation {
+      &__wrapper {
+        grid-template: repeat(1, 200px) / repeat(2, 200px);
+        column-gap: 45px;
+        padding-left: 35px;
+        img {
+          height: 200px;
+        }
+        &-descr {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 320px;
+    hr {
+      color: #bfbbb7;
+      background-color: #bfbbb7;
+      height: 3px;
+      border-radius: 10px;
+      width: 150px;
+    }
+    .animation {
+      &__wrapper {
+        grid-template: repeat(1, minmax(100px, auto) 20px) / repeat(1, 100px);
+        column-gap: 0;
+        padding-left: 0;
+        justify-content: center;
+        img {
+          height: 100px;
+        }
+        &-descr {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
